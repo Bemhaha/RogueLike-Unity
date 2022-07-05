@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5036173012694653178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5036173012694653177}
+  m_Layer: 0
+  m_Name: Generation Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5036173012694653177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036173012694653178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5036173013981535881}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5036173013981535883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5036173013981535881}
+  - component: {fileID: 5036173013981535882}
+  m_Layer: 0
+  m_Name: Level Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5036173013981535881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036173013981535883}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5036173012694653177}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5036173013981535882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036173013981535883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e91e99509f58b48b9f4e23bec73d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutRoom: {fileID: 6487252491590087720, guid: 0d01745221e253d47a016e98891d44d0, type: 3}
+  startColor: {r: 0, g: 1, b: 0.9712162, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  distanceToEnd: 10
+  generatorPoint: {fileID: 5036173012694653177}
+  selectedDirection: 0
+  xOffset: 18
+  yOffset: 10
+  whatIsRoom:
+    serializedVersion: 2
+    m_Bits: 32768
+  rooms:
+    singleUp: {fileID: 4578571890989886869, guid: fe0aaab40a039fb4c9c12118758e2e83, type: 3}
+    singleDown: {fileID: 2293441449638451574, guid: c37b35b20d865194cafe75332675ad98, type: 3}
+    singleRight: {fileID: 6433678702659214284, guid: ed008bbda4132dd4eae35c63ba656381, type: 3}
+    singleLeft: {fileID: 3076620915346705067, guid: 27ceab3bb64abb74fb2fc2ed34273a1a, type: 3}
+    doubleUpDown: {fileID: 8471614867684211574, guid: f21eeae62572a6e4e9a1024b83e874a5, type: 3}
+    doubleLeftRight: {fileID: 8326100701137890898, guid: f896d5e38354317498cb1a540c79deaf, type: 3}
+    doubleUpRight: {fileID: 7635866399125713445, guid: 5cdae28e1378e0e428768a88aa00a597, type: 3}
+    doubleRightDown: {fileID: 3140694427036703644, guid: ebfbb490463b65045807878fa9194920, type: 3}
+    doubleDownLeft: {fileID: 6155918247172907425, guid: 5b2d2f9fa9c0da54bb8524d9e4d4fe7a, type: 3}
+    doubleLeftUp: {fileID: 7976374133681990541, guid: 646622d8c6416654ca071161db6c0177, type: 3}
+    tripleUpRightDown: {fileID: 979398981714695855, guid: 2146b3cdd9bd53e4cb180d368c84742a, type: 3}
+    tripleRightDownLeft: {fileID: 2650032177283862207, guid: 18869b215e9878e4d85c1ba294e991ab, type: 3}
+    tripleDownLeftUp: {fileID: 2305833346901667016, guid: f4eab79327688874d95105c69d1fca44, type: 3}
+    tripleLeftUpRight: {fileID: 663011284843059564, guid: 4c03dd6363cd3df4a93f34810fb9fe07, type: 3}
+    fourway: {fileID: 4996065892637454634, guid: 2b1757d01eb034c4d86639dfc2fa65ba, type: 3}
+  centerStart: {fileID: 9210856028832594288, guid: f52d39c5d7b0f98458fce291c2549070, type: 3}
+  centerEnd: {fileID: 38639401752897421, guid: 843fa105deb003b41890102a7e557899, type: 3}
+  potentialCenters:
+  - {fileID: 4330107702960352731, guid: 2075c6c70a1f35643a0bbbb5d3ee2d75, type: 3}
+  - {fileID: 2786937469788195171, guid: aa831424dd084b54c8f9a3872ec247ee, type: 3}
+  - {fileID: 5338175140379155800, guid: 55b70e3972408a54bb5f9fc4da4108ef, type: 3}
+  - {fileID: 7234212108565717474, guid: c18e007f13421af4386eb9c5fc9df539, type: 3}
+  - {fileID: 1885051688255053529, guid: 3383a9aeda40b6842a9da4c58cd2f4c8, type: 3}
+  - {fileID: 5178215448090382516, guid: 8b7ed35d77862f840a49cd6e3039ade9, type: 3}
+  - {fileID: 3371344910995229593, guid: 6a4663aa27e61ba4ebca00f9429a7e87, type: 3}
+  - {fileID: 2659601776218727880, guid: 058e28da552314e40ac28eeb6972ecc9, type: 3}
